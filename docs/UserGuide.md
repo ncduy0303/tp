@@ -1,8 +1,21 @@
-# User Guide
+---
+  layout: default.md
+  title: "User Guide"
+  pageNav: 3
+---
+
+# SnS User Guide
+
 ## Description
-Spend n Split (SnS) is a **desktop app for managing expense from contacts, optimized for use via a Command Line 
-Interface** (CLI) while still having the benefits of a Graphical User Interface (GUI). If you can type fast, SnS can 
+
+Spend n Split (SnS) is a **desktop app for managing expense from contacts, optimized for use via a Command Line
+Interface** (CLI) while still having the benefits of a Graphical User Interface (GUI). If you can type fast, SnS can
 get your contact expense management tasks done faster than traditional GUI apps.
+
+<!-- * Table of Contents -->
+<page-nav-print />
+
+--------------------------------------------------------------------------------------------------------------------
 
 ## Setup
 
@@ -28,6 +41,8 @@ open the help window.<br>
     * `exit` : Exits the app.
 
 6. Refer to the [Features](#features) below for details of each command.
+
+--------------------------------------------------------------------------------------------------------------------
 
 ## Features
 
@@ -384,11 +399,24 @@ to save manually.
 
 ### Editing the data file
 
-AddressBook data are saved automatically as a JSON file `[JAR file location]/data/addressbook.json`. Advanced users 
-are welcome to update data directly by editing that data file.
+AddressBook data are saved automatically as a JSON file `[JAR file location]/data/addressbook.json`. Advanced users are welcome to update data directly by editing that data file.
+
+<box type="warning" seamless>
+
+**Caution:**
+If your changes to the data file makes its format invalid, AddressBook will discard all data and start with an empty data file at the next run.  Hence, it is recommended to take a backup of the file before editing it.
+</box>
+
+### Archiving data files `[coming in v2.0]`
+
+_Details coming soon ..._
+
+--------------------------------------------------------------------------------------------------------------------
+
 ## FAQ
-### Why do the expenses in the log not add up exactly to the balance?
-The expenses displayed are rounded to a fixed number of decimal places. This means there may be fractional differences 
+
+**Q**: Why do the expenses in the log not add up exactly to the balance?
+**A**: The expenses displayed are rounded to a fixed number of decimal places. This means there may be fractional differences 
 between the actual expenses and what is displayed.
 
 Example:
@@ -403,3 +431,9 @@ A:      0.12
 B:      0.22
 Total:  0.35
 ```
+
+--------------------------------------------------------------------------------------------------------------------
+
+## Known issues
+
+1. **When using multiple screens**, if you move the application to a secondary screen, and later switch to using only the primary screen, the GUI will open off-screen. The remedy is to delete the `preferences.json` file created by the application before running the application again.
