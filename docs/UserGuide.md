@@ -3,20 +3,21 @@ layout: page
 title: User Guide
 ---
 
-## Welcome to Spend n Split!
+## Welcome to Spend n Split
 
-***Taking care of your finances has never been easier!***
+**_Taking care of your finances has never been easier!_**
 
-Spend n Split (SnS) is an application for managing transactions from your contacts list. Built for university students 
-that reside on campus, it utilises your fast typing skills to help you maintain financial accountability between 
+Spend n Split (SnS) is an application for managing transactions from your contacts list. Built for university students
+that reside on campus, it utilises your fast typing skills to help you maintain financial accountability between
 yourself and your peers. All you need to do, is to record your transactions in Spend n Split. Filtering, sorting, as
- well as the calculations of balances owed will be automatically handled by Spend n Split.
+well as the calculations of balances owed will be automatically handled by Spend n Split.
 
 ## Table of Contents
+
 1. [Glossary](#glossary)
-    1. [Person](#person)
-    2. [Transaction](#transaction)
-    3. [Fields](#fields)
+   1. [Person](#person)
+   2. [Transaction](#transaction)
+   3. [Fields](#fields)
 2. [Quick Start](#quick-start)
 3. [Features](#features)
 4. [FAQ](#faq)
@@ -28,6 +29,7 @@ yourself and your peers. All you need to do, is to record your transactions in S
 Persons are the people with whom you track your balances against. To create a transaction with a person, they must first have been added to the app.
 
 A person has the following attributes:
+
 - Name
 - Balance (calculated by the app)
 - Tag(s)
@@ -45,6 +47,7 @@ Having a positive balance against a person means that they owe you money, conver
 Transactions are events in which money is exchanged.
 
 A transaction has the following attributes:
+
 - Description
 - Payee
 - Amount
@@ -61,22 +64,22 @@ Inputs to fields should not contain the "=" sign.
 
 The following fields are used for commands:
 
-| Field | Prefix | Format | Example |
-| --- | --- | --- | --- |
-| Index | - | Positive integers only | `1`, `2`, `3` |
-| Keyword | - | No `=` sign allowed | `Bob`, `Lunch` |
-| Name | n | Alphanumeric characters only | `Bob`, `Alice` |
-| Phone number | p | Numeric, minimum length of 3 digits | `99999999`, `88888888` |
-| Telegram handle | tg | Starts with @, followed by a minimum of 5 alphanumeric characters or underscores | `@nus_cs2103` , `@spend_n_split` |
-| Email address | e | Valid email format required | `damithch@comp.nus.edu.sg`, `dcsdcr@nus.edu.sg` |
-| Address | a | No `=` sign allowed | `Kent Ridge Hall`, `RC4` |
-| Tag | t | Single-word, alphanumeric | `friend`, `colleague` |
-| Description | d | No `=` sign allowed | `Lunch`, `Dinner @ UTown` |
-| Amount/ Cost | c | Positive rational numbers; can be a decimal or a fraction; spaces allowed | `12`, `.5`, `0.5/3`, `1.25 / 1.56`, `12 000 000` |
-| Timestamp | ts | Dates in DD/MM/YYYY format, time in HH:SS format; provide date, time, or both; if both, date must come first, separated by a space | `12:12`, `31/12/2020`, `28/02/2021 00:00` |
-| Weight | w | Positive rational numbers; can be a decimal or a fraction; spaces allowed | `12`, `.5`, `0.5/3`, `1.25 / 1.56`, `12 000 000` |
-| Original command | o | Use one of the original command keywords listed in this user guide | `setShorthand`, `addTransaction` |
-| Shorthand | s | English alphabet characters only | `s`, `aT` |
+| Field            | Prefix | Format                                                                                                                             | Example                                          |
+| ---------------- | ------ | ---------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------ |
+| Index            | -      | Positive integers only                                                                                                             | `1`, `2`, `3`                                    |
+| Keyword          | -      | No `=` sign allowed                                                                                                                | `Bob`, `Lunch`                                   |
+| Name             | n      | Alphanumeric characters only                                                                                                       | `Bob`, `Alice`                                   |
+| Phone number     | p      | Numeric, minimum length of 3 digits                                                                                                | `99999999`, `88888888`                           |
+| Telegram handle  | tg     | Starts with @, followed by a minimum of 5 alphanumeric characters or underscores                                                   | `@nus_cs2103` , `@spend_n_split`                 |
+| Email address    | e      | Valid email format required                                                                                                        | `damithch@comp.nus.edu.sg`, `dcsdcr@nus.edu.sg`  |
+| Address          | a      | No `=` sign allowed                                                                                                                | `Kent Ridge Hall`, `RC4`                         |
+| Tag              | t      | Single-word, alphanumeric                                                                                                          | `friend`, `colleague`                            |
+| Description      | d      | No `=` sign allowed                                                                                                                | `Lunch`, `Dinner @ UTown`                        |
+| Amount/ Cost     | c      | Positive rational numbers; can be a decimal or a fraction; spaces allowed                                                          | `12`, `.5`, `0.5/3`, `1.25 / 1.56`, `12 000 000` |
+| Timestamp        | ts     | Dates in DD/MM/YYYY format, time in HH:SS format; provide date, time, or both; if both, date must come first, separated by a space | `12:12`, `31/12/2020`, `28/02/2021 00:00`        |
+| Weight           | w      | Positive rational numbers; can be a decimal or a fraction; spaces allowed                                                          | `12`, `.5`, `0.5/3`, `1.25 / 1.56`, `12 000 000` |
+| Original command | o      | Use one of the original command keywords listed in this user guide                                                                 | `setShorthand`, `addTransaction`                 |
+| Shorthand        | s      | English alphabet characters only                                                                                                   | `s`, `aT`                                        |
 
 ## Quick Start
 
@@ -95,11 +98,11 @@ The following fields are used for commands:
    open the help window.<br>
    Some example commands you can try:
 
-    * `listPerson` : Lists all persons.
+   - `listPerson` : Lists all persons.
 
-    * `listTransaction` : Lists all transactions.
+   - `listTransaction` : Lists all transactions.
 
-    * `exit` : Exits the app.
+   - `exit` : Exits the app.
 
 6. Learn more about navigating the app in the [Navigating the App](#navigating-the-app) section below.
 7. Learn more about the commands in the [Features](#features) section below.
@@ -113,7 +116,7 @@ Spend n Split has an intuitive Graphical User Interface (GUI) that allows you to
 ![](images/user-guide/labelledUi.png)
 
 | Component                  | Description                                                                                                                |
-|----------------------------|----------------------------------------------------------------------------------------------------------------------------|
+| -------------------------- | -------------------------------------------------------------------------------------------------------------------------- |
 | **Command Input Field**    | Type commands here and press `Enter` to execute them.                                                                      |
 | **Command Output Display** | Shows the result of the command execution.                                                                                 |
 | **Transaction List**       | Shows a list of transactions. <br/> The list can be filtered and sorted by the user.                                       |
@@ -137,8 +140,8 @@ The order of the fields is flexible (e.g. phone number can come before name) but
 
 Examples:
 
-* `addPerson  n=John Doe p=98765432 e=johnd@example.com a=John street, block 123, #01-01`
-* `addPerson  n=Betsy Crowe t=friend e=betsycrowe@example.com a=London Block 55 p=1234567 t=London`
+- `addPerson  n=John Doe p=98765432 e=johnd@example.com a=John street, block 123, #01-01`
+- `addPerson  n=Betsy Crowe t=friend e=betsycrowe@example.com a=London Block 55 p=1234567 t=London`
 
 Note: Contact details are optional to add. They can also be added later using the editPerson command. However, once they are added, they cannot be removed through the app.
 
@@ -150,21 +153,22 @@ Format: `editPerson INDEX [n=NAME] [p=PHONE] [tg=TELEGRAM_HANDLE] [e=EMAIL] [a=A
 
 The order of the flagged fields (i.e. those with the = sign) is flexible (e.g. phone number can come before name) but the command word (editPerson) and the index must be in front.
 
-* Edits the person at the specified `INDEX`. The index refers to the index number shown in the displayed person list.
+- Edits the person at the specified `INDEX`. The index refers to the index number shown in the displayed person list.
   The index **must be a positive integer** 1, 2, 3, …​
-* At least one of the optional fields must be provided.
-* Existing values will be updated to the input values.
-* When editing tags, the existing tags of the person will be removed i.e adding of tags is not cumulative.
-* You can remove all the person’s tags by typing `t=` without
+- At least one of the optional fields must be provided.
+- Existing values will be updated to the input values.
+- When editing tags, the existing tags of the person will be removed i.e adding of tags is not cumulative.
+- You can remove all the person’s tags by typing `t=` without
   specifying any tags after it.
 
 Examples:
 
-* `editPerson 1 p=91234567 e=johndoe@example.com`
-    * Edits the phone number and email address of the 1st person to be `91234567` and `johndoe@example.com`
-      respectively.
-* `editPerson 2 n=Betsy Crower t=`
-    * Edits the name of the 2nd person to be `Betsy Crower` and clears all existing tags.
+- `editPerson 1 p=91234567 e=johndoe@example.com`
+  - Edits the phone number and email address of the 1st person to be `91234567` and `johndoe@example.com`
+    respectively.
+- `editPerson 2 n=Betsy Crower t=`
+
+  - Edits the name of the 2nd person to be `Betsy Crower` and clears all existing tags.
 
   ![editPerson_success](images\user-guide\editPerson.PNG)
 
@@ -174,17 +178,17 @@ Deletes the specified person from the spendnsplit book.
 
 Format: `deletePerson INDEX`
 
-* Deletes the person at the specified `INDEX`.
-* The index refers to the index number shown in the displayed person list.
-* The index **must be a positive integer** 1, 2, 3, …​
-* Transactions involving the deleted person will have the deleted person's name changed to "Others". In the event that
- this results in the transaction becoming irrelevant, the transaction will be automatically deleted. All transactions involving
- the deleted person as a payee will also be automatically deleted. 
+- Deletes the person at the specified `INDEX`.
+- The index refers to the index number shown in the displayed person list.
+- The index **must be a positive integer** 1, 2, 3, …​
+- Transactions involving the deleted person will have the deleted person's name changed to "Others". In the event that
+  this results in the transaction becoming irrelevant, the transaction will be automatically deleted. All transactions involving
+  the deleted person as a payee will also be automatically deleted.
 
 Examples:
 
-* `list` followed by `deletePerson 2` deletes the 2nd person in the spendnsplit book.
-* `find Betsy` followed by `deletePerson 1` deletes the 1st person in the results of the `find` command.
+- `list` followed by `deletePerson 2` deletes the 2nd person in the spendnsplit book.
+- `find Betsy` followed by `deletePerson 1` deletes the 1st person in the results of the `find` command.
 
 ![](images\user-guide\deletePerson.PNG)
 
@@ -194,19 +198,18 @@ Finds persons whose names contain any of the given keywords. If no keywords are 
 
 Format: `listPerson [KEYWORD]...`
 
-* The search is case-insensitive. e.g `hans` will match `Hans`
-* The order of the keywords does not matter. e.g. `Hans Bo` will match `Bo Hans`
-* Only the name is searched.
-* Only full words will be matched e.g. `Han` will not match `Hans`
-* Persons matching at least one keyword will be returned (i.e. `OR` search).
+- The search is case-insensitive. e.g `hans` will match `Hans`
+- The order of the keywords does not matter. e.g. `Hans Bo` will match `Bo Hans`
+- Only the name is searched.
+- Only full words will be matched e.g. `Han` will not match `Hans`
+- Persons matching at least one keyword will be returned (i.e. `OR` search).
   e.g. `Hans Bo` will return `Hans Gruber`, `Bo Yang`
 
 Examples:
 
-* `listPerson John` returns `john` and `John Doe`
-* `listPerson alex david` returns `Alex Yeoh`, `David Li`
-![listPerson success](images/user-guide/listPerson.png)
-
+- `listPerson John` returns `john` and `John Doe`
+- `listPerson alex david` returns `Alex Yeoh`, `David Li`
+  ![listPerson success](images/user-guide/listPerson.png)
 
 #### Sorting people by balance: `sortPerson`
 
@@ -217,16 +220,17 @@ own them money.
 Format: `sortPerson ORDER`
 
 Parameters:
+
 - `ORDER`: Specifies the order in which to sort the balances. Use `-` for ascending order (or most negative balance at the top) and `+` for descending order (or most positive balance at the top). Raise error for missing or unknown parameters.
 
 Examples:
-* `sortPerson -`
-    * This command will rearrange the list to show the person with the lowest outstanding balance at the top, followed 
-        by others in increasing order of their outstanding balances.
-* `sortPerson +`
-    * This command will rearrange the list to show the person with the highest outstanding balance at the top, 
-        followed by others in decreasing order of their outstanding balances.
 
+- `sortPerson -`
+  - This command will rearrange the list to show the person with the lowest outstanding balance at the top, followed
+    by others in increasing order of their outstanding balances.
+- `sortPerson +`
+  - This command will rearrange the list to show the person with the highest outstanding balance at the top,
+    followed by others in decreasing order of their outstanding balances.
 
 ![sortPerson success](images/user-guide/sortPerson.png)
 
@@ -239,6 +243,7 @@ Adds a Transaction.
 Creates a transaction for multiple people with customised split ratios.
 
 Format: `addTransaction d=DETAILS n=NAME c=COST [ts=TIME] [n=NAME w=WEIGHT]...`
+
 - Cost and weights have to be decimal numbers or fractions, and they must be positive.
 - The first name refers to the payee (that is the person whom everyone else now owes).
 - If the timestamp is not provided, the default time is the current system time.
@@ -246,29 +251,31 @@ Format: `addTransaction d=DETAILS n=NAME c=COST [ts=TIME] [n=NAME w=WEIGHT]...`
 - If you want to create a weight for yourself, include `n=Self` to refer to yourself.
 - At least one pair of name and weight must be provided.
 - The cost for each person is calculated as follows:
-    - Individual cost = Total Cost * (Individual Weight / Total Weight)
+  - Individual cost = Total Cost \* (Individual Weight / Total Weight)
 
 The order of the fields is NOT flexible.
 
 Examples:
-* `addTransaction d=Dinner n=Self c=100 n=John w=2 n=Mary w=2 n=Alice w=1`
-    * Dinner costed $100 was first paid by self; now John and Mary each owe self $40 (2/5 of $100 each), Alice owes self $20 (1/5 of $100)
-* `addTransaction d=Rent n=John c=600 ts=2020-10-10T12:00 n=Self w=1 n=John w=1 n=Mary w=1`
-    * Rent costed $600 and was first paid by John at 12 o'clock on 10 October 2020; now self owes John $200 (1/3 of $600)
+
+- `addTransaction d=Dinner n=Self c=100 n=John w=2 n=Mary w=2 n=Alice w=1`
+  - Dinner costed $100 was first paid by self; now John and Mary each owe self $40 (2/5 of $100 each), Alice owes self $20 (1/5 of $100)
+- `addTransaction d=Rent n=John c=600 ts=2020-10-10T12:00 n=Self w=1 n=John w=1 n=Mary w=1`
+  - Rent costed $600 and was first paid by John at 12 o'clock on 10 October 2020; now self owes John $200 (1/3 of $600)
 
 Sample execution:
-```
-$ addTransaction d=Dinner n=self c=100 n=John w=2 n=Mary w=2 n=Alice w=1
 
 ```
+addTransaction d=Dinner n=self c=100 n=John w=2 n=Mary w=2 n=Alice w=1
+
+```
+
 ![addTransaction success](images/user-guide/addTransaction1.png)
-
 
 ```
 $ addTransaction c=200 d=Textbooks
 
-Invalid command format! 
-addTransaction: Adds a transaction to the spendnsplit book. 
+Invalid command format!
+addTransaction: Adds a transaction to the spendnsplit book.
 Parameters: d=DESCRIPTION n=NAME c=COST [n=NAME w=WEIGHT] Example: addTransaction d=bread n=John Doe c=25.00 n=Self w=1.5 n=John Doe w=1
 ```
 
@@ -279,9 +286,9 @@ The index **must be a positive integer** 1, 2, 3, ...
 
 Transaction details that can be edited:
 
-* Description
-* Cost
-* Payee
+- Description
+- Cost
+- Payee
 
 Format: `editTransaction INDEX [d=DESCRIPTION] [c=COST] [n=PAYEE] [ts=TIME]`
 
@@ -292,15 +299,15 @@ If only the date is given, the default time is set as 00:00.
 
 Examples:
 
-* `editTransaction 1 c=12.12`
-* `editTransaction 2 d=Potato n=Bob`
-* At least one of the optional fields must be provided.
-* Existing values will be updated to the input values.
-* A transaction cannot be edited to be "irrelevant".
+- `editTransaction 1 c=12.12`
+- `editTransaction 2 d=Potato n=Bob`
+- At least one of the optional fields must be provided.
+- Existing values will be updated to the input values.
+- A transaction cannot be edited to be "irrelevant".
 
 Sample Execution:
 
-``` 
+```
 editTransaction 1 n=Bob c=12.12
 ```
 
@@ -321,16 +328,16 @@ The order of the flagged fields (i.e. those with the = sign) is flexible (e.g. w
 
 Examples:
 
-* To add a new person (e.g. Alice) to the transaction:
-    * `updatePortion 1 n=Alice w=0.5`
+- To add a new person (e.g. Alice) to the transaction:
 
+  - `updatePortion 1 n=Alice w=0.5`
 
-* To edit the weight of an existing person (e.g. Bob) in the transaction:
-    * `updatePortion 1 n=Bob w=0.5`
+- To edit the weight of an existing person (e.g. Bob) in the transaction:
 
+  - `updatePortion 1 n=Bob w=0.5`
 
-* To remove an existing person (e.g. Bob) from the transaction, set the weight to 0:
-    * `updatePortion 1 n=Bob w=0`
+- To remove an existing person (e.g. Bob) from the transaction, set the weight to 0:
+  - `updatePortion 1 n=Bob w=0`
 
 Sample Execution:
 
@@ -346,12 +353,12 @@ Deletes the specified transaction based on index.
 
 Format: `deleteTransaction INDEX`
 
-* The index refers to the index number shown in the displayed transaction list. The index **must be a positive integer** 1, 2, 3, ...
+- The index refers to the index number shown in the displayed transaction list. The index **must be a positive integer** 1, 2, 3, ...
 
 Examples:
 
-* `deleteTransaction 1`
-    * Deletes the first transaction in the list
+- `deleteTransaction 1`
+  - Deletes the first transaction in the list
 
 Sample Execution:
 
@@ -371,9 +378,9 @@ The index **must be a positive integer** 1, 2, 3, ...
 
 Transaction details that can be changed when duplicating:
 
-* Description
-* Cost
-* Payee
+- Description
+- Cost
+- Payee
 
 Format: `duplicateTransaction INDEX [d=DESCRIPTION] [c=COST] [n=PAYEE] [ts=TIME]`
 
@@ -381,13 +388,13 @@ The order of the flagged fields (i.e. those with the = sign) is flexible (e.g. d
 
 Examples:
 
-* `duplicateTransaction 1 c=12.12`
-  * Creates a new transaction that is identical to the current transaction at index one in the Transaction panel, 
-  except for the timestamp of the new transaction being the time at which this command was executed 
-  and the cost bring 12.12 instead.
-* `duplicateTransaction 2 d=Potato n=Bob`
-  * Creates a new transaction that is identical to the current transaction at index two in the Transaction panel,
-    except for the timestamp of the new transaction being the time at which this command was executed, the 
+- `duplicateTransaction 1 c=12.12`
+  - Creates a new transaction that is identical to the current transaction at index one in the Transaction panel,
+    except for the timestamp of the new transaction being the time at which this command was executed
+    and the cost bring 12.12 instead.
+- `duplicateTransaction 2 d=Potato n=Bob`
+  - Creates a new transaction that is identical to the current transaction at index two in the Transaction panel,
+    except for the timestamp of the new transaction being the time at which this command was executed, the
     description of the new transaction being "Potato" and the payee of the new transaction being Bob.
 
 #### Listing transactions: `listTransaction`
@@ -396,15 +403,15 @@ Shows a list of transactions whose descriptions include any of the keywords and 
 
 Format: `listTransaction [KEYWORD]... [n=NAME]...`
 
-* The name refers to the name of the person in the transaction (either as a payee or a payer).
-* The name must contain only alphabets, numbers, and spaces. It cannot be empty and is case-insensitive.
+- The name refers to the name of the person in the transaction (either as a payee or a payer).
+- The name must contain only alphabets, numbers, and spaces. It cannot be empty and is case-insensitive.
 
 Examples:
 
-* `listTransaction`
-    * Shows all transactions
-* `listTransaction n=Alice Pauline n=Carl Kurz`
-    * Shows all transactions that include Alice Pauline or Carl Kurz
+- `listTransaction`
+  - Shows all transactions
+- `listTransaction n=Alice Pauline n=Carl Kurz`
+  - Shows all transactions that include Alice Pauline or Carl Kurz
 
 Sample Execution:
 
@@ -434,20 +441,20 @@ Format: `settlePerson INDEX [ts=TIME]`
 
 Example:
 
-*  `settlePerson 1` settles the outstanding balance with the 1st person in the displayed list.
+- `settlePerson 1` settles the outstanding balance with the 1st person in the displayed list.
 
 Sample Execution:
 
 ```
-$ settlePerson 
+$ settlePerson
 
-Invalid command format! 
+Invalid command format!
 settlePerson: Settle any outstanding balance with another person. Parameters: INDEX (must be a positive integer)
 Example: settlePerson 1
 
 $ settlePerson 1
 
-Balance settled: Alex Yeoh 
+Balance settled: Alex Yeoh
 ```
 
 ![settle error](images/user-guide/settle1.jpeg)
@@ -487,7 +494,9 @@ Exits the program.
 Format: `exit`
 
 #### Navigating the app using only the keyboard
+
 You can use the following shortcuts to navigate our application:
+
 - Selecting Result Display: [<kbd>ALT</kbd> (Windows/Linux) / <kbd>OPTION</kbd> (Mac)] + <kbd>UP ARROW KEY</kbd>
 - Selecting Persons List: [<kbd>ALT</kbd> (Windows/Linux) / <kbd>OPTION</kbd> (Mac)] + <kbd>LEFT ARROW KEY</kbd>
 - Selecting Transactions List: [<kbd>ALT</kbd> (Windows/Linux) / <kbd>OPTION</kbd> (Mac)] + <kbd>RIGHT ARROW KEY</kbd>
@@ -509,7 +518,7 @@ Data is saved automatically as a JSON file `[JAR file location]/data/spendnsplit
 ### 1) Why do the portions in the log not add up exactly to the balance?
 
 The portions displayed are rounded to a fixed number of decimal places. This means there may be fractional differences
-between the actual portions and what is displayed. Values are rounded to 2 decimal places (i.e. 0.149 will be rounded down to 0.14, 
+between the actual portions and what is displayed. Values are rounded to 2 decimal places (i.e. 0.149 will be rounded down to 0.14,
 and 0.145 will be rounded up to 0.15). The positive and negative signs will still be kept (i.e. -0.0000001 will be rounded
 down to -0.00, and -1.015 will be rounded up to -1.02).
 
@@ -526,39 +535,48 @@ A:      0.12
 B:      0.22
 Total:  0.35
 ```
+
 ### 2) What happens when I enter an invalid command?
 
-When an invalid command is input, an error message will be reflected at the 
+When an invalid command is input, an error message will be reflected at the
 output panel at the top of Spend n Split. The error message will vary depending on the type of error.
 
-* Invalid command format. This occurs when the command word 
-is recognised but there are missing fields or the values provided in the fields are 
-not supported. 
-The error message reflected
-will state `Invalid command format!`, 
-before giving details on the command and 
-the fields required, along with an example of a correct command
-input with the fields required.
-    * Example: `settlePerson -1`
-      * Error message: 
+- Invalid command format. This occurs when the command word
+  is recognised but there are missing fields or the values provided in the fields are
+  not supported.
+  The error message reflected
+  will state `Invalid command format!`,
+  before giving details on the command and
+  the fields required, along with an example of a correct command
+  input with the fields required.
+
+  - Example: `settlePerson -1`
+
+    - Error message:
+
     ```
     Invalid command format!
     settlePerson: Settle any outstanding balance with another person. Parameters: INDEX (must be a positive integer)
     Example: settlePerson 1
     ```
-* Unknown command. This occurs when the command word is not recognised.
-The error message reflected will state `Unknown command`.
-  * Example: `settleTransaction n=Ryan tg=@ryanzzzzz`
-    * Error message:
+
+- Unknown command. This occurs when the command word is not recognised.
+  The error message reflected will state `Unknown command`.
+
+  - Example: `settleTransaction n=Ryan tg=@ryanzzzzz`
+    - Error message:
+
   ```
   Unknown command
   ```
-* Invalid command fields. This occurs when the invalid fields are provided
-for the valid command word. The error message reflected is dependent on the 
-valid command word.
-  * Example: `settlePerson 6` when there are only 5 people in the Persons List.
-    * Error message:
+
+- Invalid command fields. This occurs when the invalid fields are provided
+  for the valid command word. The error message reflected is dependent on the
+  valid command word.
+
+  - Example: `settlePerson 6` when there are only 5 people in the Persons List.
+    - Error message:
+
   ```
   The person index provided is invalid
   ```
-  
