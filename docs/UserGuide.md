@@ -20,6 +20,9 @@ well as the calculations of balances owed will be automatically handled by Spend
    3. [Fields](#fields)
 2. [Quick Start](#quick-start)
 3. [Features](#features)
+   1. [Person-related features](#person-related-features)
+   2. [Transaction-related features](#transaction-related-features)
+   3. [Other features](#other-features)
 4. [FAQ](#faq)
 
 ## Glossary
