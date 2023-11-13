@@ -5,7 +5,7 @@ title: User Guide
 ## Introduction
 ***Taking care of your finances has never been easier!***
 
-Spend N Split (SnS) is an application meant for managing transactions from your contacts list. Built for university students that reside on campus, it utilises your fast typing skills to help you maintain financial accountability between yourself and your peers. All you need to do, is to record your transactions in Spend N Split. Filtering, sorting, as well as the calculations of balances owed will be automatically handled by Spend N Split.
+Spend N Split (SNS) is an application meant for managing transactions from your contacts list. Built for university students that reside on campus, it utilises your fast typing skills to help you maintain financial accountability between yourself and your peers. All you need to do, is to record your transactions in Spend N Split. Filtering, sorting, as well as the calculations of balances owed will be automatically handled by Spend N Split.
 
 Spend N Split is perfect for **you** if you are
 1. A university student staying on campus.
@@ -186,8 +186,8 @@ The following parameters are used for commands:
 | Original command     | o | An original command keyword listed in this user guide                                                                                                                                                          | `setShorthand`, `addTransaction` |
 | Shorthand            | s | Single-word, English alphabet characters only                                                                                                                                                                  | `s`, `aT` |
 
-&ast; SnS checks the validity of Telegram handles and email addresses using general formats.
-SnS is able to reject any Telegram handles or email addresses it detects as invalid.
+&ast; SNS checks the validity of Telegram handles and email addresses using general formats.
+SNS is able to reject any Telegram handles or email addresses it detects as invalid.
 However, it is not able to detect *all* invalid Telegram handles or email addresses as
 format does not strictly enforce that a Telegram handle or email address is valid.
 
